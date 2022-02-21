@@ -6,6 +6,8 @@ import {About} from './Components/About'
 import {Contact} from './Components/Contact'
 import {Support} from './Components/Support'
 import {Team} from './Components/Team'
+import { PageNotFound } from './Components/PageNotFound';
+import {Student} from './Components/Student'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/support' element={<Support/>}/>
           <Route path='/team' element={<Team/>}/>
+          <Route path='/student/:stuId' element={<Student/>}/>
+          <Route path='/*' element={<PageNotFound/>}/>
         </Routes>
 
     </div>
